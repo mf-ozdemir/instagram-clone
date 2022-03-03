@@ -3,7 +3,6 @@ body {
 }
 
 ::placeholder{
-  text-align: center;
   font-size: 14px;
   color: gray;
   background-position: 40%;
@@ -16,6 +15,14 @@ input.empty {
     font-weight: normal;
     text-decoration: inherit;
     background-color: #FAFAFA;
+}
+
+input.empty:focus ~ img {
+  display: none;
+}
+
+form {
+  position: relative;
 }
 
 .card {
